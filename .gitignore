@@ -15,3 +15,10 @@ db.sqlite3
 
 # VS Code
 .vscode/
+
+/app/static/
+/app/media/
+/app/mysite/settings.py
+gunicorn-error-log
+__localcode
+/data/
