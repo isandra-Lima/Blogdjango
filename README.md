@@ -40,6 +40,7 @@ docker-compose up --build
 
 4. Acessar a aplicação
 http://localhost:8000
+
 🗂 Estrutura do projeto
 Blogdjango/
 ├── mysite/
