@@ -1,32 +1,32 @@
-🚀 Blog Django com Docker
+# 🚀 Blog Django com Docker
 
 Projeto de um blog desenvolvido em Django, preparado para execução com Docker e PostgreSQL, utilizando boas práticas de organização e segurança.
 
-📌 Tecnologias
+## 📌 Tecnologias
 
-• Python 3.11
-• Django
-• PostgreSQL
-• Docker & Docker Compose
-• Decouple (variáveis de ambiente)
+- Python 3.11  
+- Django  
+- PostgreSQL  
+- Docker e Docker Compose  
+- python-decouple (variáveis de ambiente)
 
-⚙️ Funcionalidades
+## ⚙️ Funcionalidades
 
-• Configuração via variáveis de ambiente
-• Integração com banco PostgreSQL
-• Estrutura pronta para Docker
-• Suporte a arquivos estáticos (STATIC)
-• Suporte a uploads (MEDIA)
-• Organização de settings
+- Configuração via variáveis de ambiente  
+- Integração com banco PostgreSQL  
+- Estrutura pronta para Docker  
+- Suporte a arquivos estáticos (STATIC)  
+- Suporte a uploads (MEDIA)  
+- Organização de configurações  
 
-📦 Como executar
-1. Clonar o repositório
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
-2. Criar o arquivo .env
 
-Baseie-se no .env.example:
+## 📦 Como executar
 
+## 1. Criar o arquivo `.env`
+
+Crie um arquivo chamado `.env` na raiz do projeto e baseie-se no conteúdo abaixo (ou no arquivo `.env.example`):
+
+```env
 DEBUG=True
 SECRET_KEY=sua_chave_aqui
 DB_NAME=postgres
@@ -34,32 +34,24 @@ DB_USER=postgres
 DB_PASSWORD=postgres
 DB_HOST=db
 DB_PORT=5432
+```
+## 2. 🚀 Subir os containers
 
-3. Subir os containers
+Certifique-se de que o Docker está rodando e execute o comando:
+
+```bash
 docker-compose up --build
+```
 
-4. Acessar a aplicação
-http://localhost:8000
+## 3. 🌐 Acessar o projeto
 
-🗂 Estrutura do projeto
-Blogdjango/
-├── mysite/
-├── dotenv_files/
-├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-├── .env.example
-└── .dockerignore
+Após a inicialização, o projeto estará disponível no navegador:
+```
+👉 http://localhost:8000
+```
+## 🎯 Objetivo
 
-🧪 Testes
-docker-compose run web python manage.py test
-🔒 Boas práticas
+Fornecer uma base sólida para o desenvolvimento de um blog em Django com Docker, garantindo facilidade de execução, segurança com variáveis de ambiente e boa organização do projeto.
+Produtividade: configuração simplificada para desenvolvedores iniciarem rapidamente sem setup manual.
 
-• Uso de variáveis de ambiente
-• Arquivos sensíveis ignorados
-• Separação de configuração e código
-• Uso de Docker para padronização
-
-🎯 Objetivo
-
-Facilitar o desenvolvimento e deploy do projeto utilizando containerização, garantindo consistência entre ambientes.
+Organização: separação clara entre configurações de desenvolvimento e produção.
